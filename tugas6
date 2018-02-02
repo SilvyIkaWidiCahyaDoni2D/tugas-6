@@ -6,15 +6,31 @@ ika syam setiawati      (1154053)
 silvy dharma febryana   (1154112)
 Widi damayanti          (1154062)
 
+\ref{fieldkolom}
+	\begin{figure}[ht]
+	\centerline{\includegraphics[width=1\textwidth]{figures/download.JPG}}
+	\caption{ini gambar.}
+	\label{fieldkolom}
+	\end{figure}
+
+\section{Pyshp}
 File dengan format JSON tidak,mudah dibaca untuk perangkat lunak SIG. Python bentuk-file.(pyshp 1.2.1) perpustakaan didirikan untuk dibuat. point-file untuk setiap stasiun iklim. 
 Perpustakaan menghasilkan satu bentuk-file untuk masing-masing yang diinginkan data iklim seperti curah hujan Sebelumnya, buat bentuk-file, tidak ada nilai data yang dihapus Karena data milik suatu wilayah kecil, variasi Rentang dari mereka tidak besar. 
-Karena Untuk alasan ini, nilai normalisasi data dihitung Lalu satu bentuk file itu diciptakan untuk setiap data iklim yang diinginkan berisi nilai yang teramati dan dinormalisasi.
+Karena Untuk alasan ini,\ref{fieldkolom} nilai normalisasi data dihitung Lalu satu bentuk file itu diciptakan untuk setiap data iklim yang diinginkan berisi nilai yang teramati dan dinormalisasi.
 The pyshp menyisipkan angka sebagai string pada atribut tabel bentuk-file dan tidak didefinisikan proyeksi dari bentuk-file. Dalam hal ini,Perpustakaan python Arcpy digunakan untuk menentukan proyeksi dan mengubah string numerik menjadi angka.
-
+\subsection{basic usage}
 The Shapefile Perpustakaan Python (pyshp) menyediakan membaca dan menulis dukungan untuk format ESRI Shapefile. 
 Format Shapefile adalah Sistem Informasi Geografis format data vektor populer yang dibuat oleh ESRI. 
 Untuk informasi lebih lanjut tentang format ini silakan baca yang ditulis dengan "ESRI Shapefile Teknis Deskripsi - Juli 1998". 
 Dokumen Esri menggambarkan shp dan berkas SHX format. Namun format file ketiga yang disebut dbf juga diperlukan. 
 Format ini didokumentasikan di web sebagai "Xbase File Format Keterangan" dan berbasis format file database sederhana dibuat pada 1960-an. 
 Kedua Esri dan Xbase file format yang sangat sederhana dalam desain dan memori efisien yang merupakan bagian dari alasan format shapefile tetap populer meskipun banyak cara untuk menyimpan dan pertukaran data GIS yang tersedia saat ini.
+
+Membaca record
+\begin{verbatim}
+  import shapefile
+  a = shapefile.Reader('namafile.shp')
+  a.records() //menampilkan semua record
+  a.record(0) //spesifik record
+\end{verbatim}
 
