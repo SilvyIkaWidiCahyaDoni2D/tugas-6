@@ -22,6 +22,8 @@ The pyshp menyisipkan angka sebagai string pada atribut tabel bentuk-file dan ti
 The Shapefile Perpustakaan Python (pyshp) menyediakan membaca dan menulis dukungan untuk format ESRI Shapefile. 
 Format Shapefile adalah Sistem Informasi Geografis format data vektor populer yang dibuat oleh ESRI. 
 Untuk informasi lebih lanjut tentang format ini silakan baca yang ditulis dengan "ESRI Shapefile Teknis Deskripsi - Juli 1998". 
+
+\subsection{format}
 Dokumen Esri menggambarkan shp dan berkas SHX format. Namun format file ketiga yang disebut dbf juga diperlukan. 
 Format ini didokumentasikan di web sebagai "Xbase File Format Keterangan" dan berbasis format file database sederhana dibuat pada 1960-an. 
 Kedua Esri dan Xbase file format yang sangat sederhana dalam desain dan memori efisien yang merupakan bagian dari alasan format shapefile tetap populer meskipun banyak cara untuk menyimpan dan pertukaran data GIS yang tersedia saat ini.
