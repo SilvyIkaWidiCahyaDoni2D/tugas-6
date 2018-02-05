@@ -19,6 +19,11 @@ Perpustakaan menghasilkan satu bentuk-file untuk masing-masing yang diinginkan d
 Karena Untuk alasan ini,\ref{fieldkolom} nilai normalisasi data dihitung Lalu satu bentuk file itu diciptakan untuk setiap data iklim yang diinginkan berisi nilai yang teramati dan dinormalisasi.
 The pyshp menyisipkan angka sebagai string pada atribut tabel bentuk-file dan tidak didefinisikan proyeksi dari bentuk-file. Dalam hal ini,Perpustakaan python Arcpy digunakan untuk menentukan proyeksi dan mengubah string numerik menjadi angka.
 \subsection{basic usage}
+
+SHP (Shape File) adalah format file yang berbentuk vektor dan terdiri dari 4 jenis file yaitu .shp, .shx, .dbf, dan .prj. SHP berisi kode binary.
+Format file SHP dikeluarkan oleh ESRI, sebuah perusahaan yang bergerak dibidang perangkat lunak berbasis geografis. SHP ini paling banyak digunakan dalam dunia sistem informasi geografis.
+
+SHP bisa dibuka dibanyak aplikasi, misal Argis, Qgis, Tilemill, dll. Disalah satu file SHP yaitu .prj berisi jenis proyeksi yang digunakan untuk mereferensikan koordinat, agar pas di overlay diatas peta koordinatnya ngga melenceng.
 The Shapefile Perpustakaan Python (pyshp) menyediakan membaca dan menulis dukungan untuk format ESRI Shapefile,\Format Shapefile adalah Sistem Informasi Geografis format data vektor populer yang dibuat oleh ESRI. 
 Untuk informasi lebih lanjut tentang format ini silakan baca yang ditulis dengan "ESRI Shapefile Teknis Deskripsi - Juli 1998". 
 Dokumen Esri menggambarkan shp dan berkas SHX format. Namun format file ketiga yang disebut dbf juga diperlukan. 
